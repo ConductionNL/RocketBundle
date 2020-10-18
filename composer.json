@@ -1,5 +1,5 @@
 {
-	"name" : "conduction/nldesignbundle",
+	"name" : "conduction/rocketbundle",
 	"type" : "library",
 	"description" : "Symfony Bundle for dutch common ground functionality",
 	"keywords" : [
