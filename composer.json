@@ -1,0 +1,45 @@
+{
+	"name" : "conduction/nldesignbundle",
+	"type" : "library",
+	"description" : "Symfony Bundle for dutch common ground functionality",
+	"keywords" : [
+		"rocket",
+		"symfony",
+		"theme"
+	],
+	"homepage" : "https://www.conduction.nl",
+	"license" : "MIT",
+	"authors" : [{
+		"name" : "Ruben van der Linde",
+		"email" : "ruben@conduction.nl"
+	}, {
+		"name" : "Conduction",
+		"homepage" : "https://www.conduction.nl"
+	}
+	],
+	"require" : {
+		"php" : "^7.4.0",
+		"twig/extensions": "^1.5",
+		"conduction/commongroundbundle": "dev-master"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Conduction\\RocketBundle\\" : ""
+		},
+		"exclude-from-classmap" : [
+			"/Tests/"
+		]
+	},
+	"minimum-stability" : "alpha",
+	"support" : {
+		"email" : "ruben@conduction.nl",
+		"issues" : "https://github.com/ConductionNL/RocketBundle/issues",
+		"source" : "https://github.com/ConductionNL/RocketBundle"
+	},
+	"repositories" : [{
+		"type" : "git",
+		"url" : "https://github.com/ConductionNL/RocketBundle",
+		"name" : "source"
+	}
+	]
+}
