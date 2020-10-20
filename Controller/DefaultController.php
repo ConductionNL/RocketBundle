@@ -4,10 +4,8 @@
 
 namespace Conduction\RocketBundle\Controller;
 
-use Conduction\CommonGroundBundle\Service\CommonGroundService;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\Session;
@@ -25,10 +23,11 @@ class DefaultController extends AbstractController
     /**
      * This function serves the base (home) path for this template
      *
-     * @Route("/", name="conduction_rocket_default_index", priority=2)
+     * "/", name="conduction_rocket_default_index", priority=2
+     * @Route("/", name="conduction_rocket_default_index")
      * @Template
      */
-    public function indexAction(Session $session, Request $request, CommonGroundService $commonGroundService, ParameterBagInterface $params)
+    public function indexAction(Session $session, Request $request)
     {
         $variable = [];
 
