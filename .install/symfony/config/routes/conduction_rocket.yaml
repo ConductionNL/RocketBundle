@@ -1,0 +1,3 @@
+conduction_common_ground:
+  resource: "@RocketBundle/Resources/config/routes.yaml"
+  prefix: /
