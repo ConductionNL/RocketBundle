@@ -6,12 +6,14 @@
     <services>
         <defaults autowire="true" autoconfigure="true" />
 
-        <!--CommonGround Controllers-->
+        <!--Rocket Controllers-->
         <service id="conduction_rocket.default_controller" class="Conduction\RocketBundle\Controller\DefaultController" public="true">
             <call method="setContainer">
-                <argument type="service" id="Psr\Container\ContainerInterface"/>
+                <argument type="service" id="service_container"/>
             </call>
-            <tag name="container.service_subscriber"/>
+            <tag name="controller.service_subscriber"/>
+            <tag name="controller.service_arguments"/>
         </service>
+
     </services>
 </container>
