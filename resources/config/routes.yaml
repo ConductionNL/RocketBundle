@@ -1,4 +1,4 @@
 # config/routes.yaml
-app_default_index:
+conduction_rocket_default_index:
     path:       /
     controller: Conduction\RocketBundle\Controller\DefaultController::index

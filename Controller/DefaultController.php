@@ -25,7 +25,7 @@ class DefaultController extends AbstractController
     /**
      * This function serves the base (home) path for this template
      *
-     * @Route("/")
+     * @Route("/", name="conduction_rocket_default_index", priority=2)
      * @Template
      */
     public function indexAction(Session $session, Request $request, CommonGroundService $commonGroundService, ParameterBagInterface $params)
