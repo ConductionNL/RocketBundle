@@ -8,11 +8,6 @@
 
         <!--Rocket Controllers-->
         <service id="conduction_rocket.default_controller" class="Conduction\RocketBundle\Controller\DefaultController" public="true">
-            <call method="setContainer">
-                <argument type="service" id="service_container"/>
-            </call>
-            <tag name="controller.service_subscriber"/>
-            <tag name="controller.service_arguments"/>
         </service>
 
     </services>

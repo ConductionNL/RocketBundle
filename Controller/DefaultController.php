@@ -18,7 +18,7 @@ use Symfony\Component\Routing\Annotation\Route;
  *
  * @Route("/")
  */
-class DefaultController extends AbstractController
+class DefaultController
 {
     /**
      * This function serves the base (home) path for this template
