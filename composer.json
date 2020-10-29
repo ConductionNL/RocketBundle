@@ -20,7 +20,7 @@
 	"require" : {
 		"php" : "^7.1.3",
 		"twig/extensions": "^1.5",
-		"conduction/commongroundbundle": "dev-master"
+		"conduction/commongroundbundle": "dev-master || dev-symfony51"
 	},
 	"autoload" : {
 		"psr-4" : {
